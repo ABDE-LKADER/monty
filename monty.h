@@ -40,7 +40,6 @@ typedef struct instruction_s
 void execute(char *opcode, stack_t *stack, unsigned int line_number);
 void check(int argc, char *argv[], FILE *file);
 int is_num(char *argument);
-char *int_to_str(int number);
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
