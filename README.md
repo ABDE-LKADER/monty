@@ -11,7 +11,7 @@ Print Error: If any errors occur, the error messages are printed.
 End Program: The program execution ends.
 </p>
 
-<h3>
+<h5>
 									  +----------------+
 									  | Start Program  |
 									  +----------------+
@@ -48,4 +48,4 @@ End Program: The program execution ends.
 									  +----------------+
 									  | End Program    |
 									  +----------------+
-</h3>
+</h5>
