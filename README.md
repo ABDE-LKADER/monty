@@ -1,6 +1,6 @@
 > Let's Go With __*Stacks, Queues - LIFO, FIFO*__ In "C"
 
-<p>
+<h5>
 Start Program: The program execution begins.
 Read File: The program reads the Monty byte code file and extracts the instructions.
 Parse Commands: The instructions are parsed and converted into appropriate data structures.
@@ -9,9 +9,9 @@ Check Errors: Any errors encountered during execution are checked and appropriat
 Print Result: If the execution completes successfully, the results (values on the stack) are printed.
 Print Error: If any errors occur, the error messages are printed.
 End Program: The program execution ends.
-</p>
+</h5>
 
-<h5>
+<h6>
 									  +----------------+
 									  | Start Program  |
 									  +----------------+
@@ -48,4 +48,4 @@ End Program: The program execution ends.
 									  +----------------+
 									  | End Program    |
 									  +----------------+
-</h5>
+</h6>
