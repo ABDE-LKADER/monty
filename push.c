@@ -28,23 +28,27 @@ int is_num(char *str)
 
 void _push(stack_t **stack, unsigned int line_number)
 {
-	stack_t *new;
+	int num;
 	char *arg;
+	stack_t *new = malloc(sizeof(stack_t));
 
-	arg = strtok(NULL, " \n");
-	if (arg == NULL || is_num(arg) == -1)
+	arg = strtok(NULL, " ");
+	if (arg == NULL)
 	{
-		printf("L%d: usage: push integer\n", line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
-	} new = malloc(sizeof(stack_t));
+	} num = atoi(arg);
+	if (is_num(arg) == -1)
+	{
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
+		exit(EXIT_FAILURE);
+	}
 	if (new == NULL)
 	{
-		printf("Error: malloc failed\n");
+		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
-	} new->n = atoi(arg);
+	} new->n = num;
 	new->prev = NULL;
 	new->next = *stack;
-	if (*stack != NULL)
-		(*stack)->prev = new;
 	*stack = new;
 }
