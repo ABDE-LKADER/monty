@@ -6,7 +6,7 @@
  * @counter: Line Number
  */
 
-/*void pstr(stack_t **head, unsigned int counter)
+void pstr(stack_t **head, unsigned int counter)
 {
     stack_t *temp = *head;
 
