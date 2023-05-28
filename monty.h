@@ -52,5 +52,8 @@ void _div(stack_t **stack, unsigned int line_number);
 void _mul(stack_t **stack, unsigned int line_number);
 void _mod(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
+void pchar(stack_t **head, unsigned int counter);
+void pstr(stack_t **head, unsigned int counter);
+void rotl(stack_t **head, unsigned int counter);
 
 #endif

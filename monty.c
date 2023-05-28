@@ -20,7 +20,8 @@ int main(int ac, char *av[])
 		{"push", _push}, {"pall", _pall}, {"pint", _pint},
 		{"pop", _pop}, {"swap", _swap}, {"add", _add},
 		{"nop", _nop}, {"sub", _sub}, {"div", _div},
-		{"mul", _mul}, {"mod", _mod}, {NULL, NULL}
+		{"mul", _mul}, {"mod", _mod}, {"pchar", pchar},
+		{"pstr", pstr}, {"rotl", rotl}, {NULL, NULL}
 	};
 
 	check(ac, av, file);
