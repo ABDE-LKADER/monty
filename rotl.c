@@ -8,17 +8,16 @@
 
 void rotl(stack_t **head, unsigned int counter)
 {
-    stack_t *temp = *head;
+    stack_t *tmp = *head;
     int n;
 
     (void)counter;
     if (*head == NULL || (*head)->next == NULL)
         return;
     n = (*head)->n;
-    while (temp->next != NULL)
+    while (tmp->next != NULL)
     {
-        temp->n = temp->next->n;
-        temp = temp->next;
-    }
-    temp->n = n;
+        tmp->n = tmp->next->n;
+        tmp = tmp->next;
+    } tmp->n = n;
 }
