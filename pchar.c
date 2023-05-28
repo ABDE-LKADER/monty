@@ -6,7 +6,7 @@
  * @counter: Line Number
  */
 
-/*void pchar(stack_t **head, unsigned int counter)
+void pchar(stack_t **head, unsigned int counter)
 {
     if (*head == NULL)
     {
