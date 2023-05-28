@@ -17,6 +17,5 @@ void pchar(stack_t **head, unsigned int counter)
     {
         fprintf(stderr, "L%d: can't pchar, value out of range\n", counter);
         exit(EXIT_FAILURE);
-    }
-    printf("%c\n", (*head)->n);
+    } printf("%c\n", (*head)->n);
 }
