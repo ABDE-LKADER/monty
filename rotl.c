@@ -6,7 +6,7 @@
  * @counter: Line Number
  */
 
-/*void rotl(stack_t **head, unsigned int counter)
+void rotl(stack_t **head, unsigned int counter)
 {
     stack_t *temp = *head;
     int n;
