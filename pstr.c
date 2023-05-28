@@ -17,6 +17,5 @@ void pstr(stack_t **head, unsigned int counter)
             break;
         printf("%c", temp->n);
         temp = temp->next;
-    }
-    printf("\n");
+    } printf("\n");
 }
