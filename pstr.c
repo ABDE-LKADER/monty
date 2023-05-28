@@ -8,14 +8,14 @@
 
 void pstr(stack_t **head, unsigned int counter)
 {
-    stack_t *temp = *head;
+    stack_t *tmp = *head;
 
     (void)counter;
-    while (temp != NULL)
+    while (tmp != NULL)
     {
-        if (temp->n <= 0 || temp->n > 127)
+        if (tmp->n <= 0 || tmp->n > 127)
             break;
-        printf("%c", temp->n);
-        temp = temp->next;
+        printf("%c", tmp->n);
+        tmp = tmp->next;
     } printf("\n");
 }
